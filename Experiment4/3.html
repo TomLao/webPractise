@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>消息管理</title>
+	<link rel="stylesheet" href="css/3.css" type="text/css">
+	<script type="text/javascript" src="js/3.js"></script>
+</head>
+<body>
+	<div class="three">
+		<div id="mydiv">						<!--这里直接双击c传值删除-->
+			<div name="information" ondblclick="deleteDiv(this)" onclick="changecss(this)" onblur="getdiv(this)" contenteditable="true">前端好坑</div>
+		</div>
+		<div class="input_box">
+			<textarea name="content" id="content"></textarea>
+			<br/>
+			<div id="button">
+				<input type="button" value="添加信息" onclick="addElementDiv()"/>
+				<input type="button" value="插入信息" onclick="insertDiv()"/>
+				<input type="button" value="清空信息" onclick="clearAll3()"/>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

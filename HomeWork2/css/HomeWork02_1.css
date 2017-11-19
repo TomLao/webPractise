@@ -1,0 +1,79 @@
+a:link{
+	text-decoration: none;
+	color: #FFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+	
+}
+a:hover {
+	/*text-decoration: none;*/
+	color: red;/*鼠标放上来变色*/
+}
+a:active {
+	text-decoration: none;
+	color: red;
+}
+.imagesFrame{
+	width: 1000px;
+	height: 641px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.footFrame{
+	width: 1000px;
+	height: 78px;
+	position: absolute;
+	top: 570px;
+	background-color: rgba(0, 117, 169, 0.702);
+	/*opacity: 0.9;*/
+}
+.footFrameLeft{
+	height: 78px;
+	/*line-height: 38px;*/
+	position: absolute;
+	top:8px;
+	left: 20px;
+}
+.pointFrame{
+    position: relative;
+	/*height: 10px;*/
+	width: 15px;
+	/*position: absolute;*/
+	top: 30px;
+	left: 950px;
+}
+
+span{
+	width: 13px;
+    height: 13px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #007aff;
+    opacity: 1;
+    background: #FFF;
+}
+#active{
+     background: #007aff;
+ }
+#one{
+    position: absolute;
+    background-image: url("../images/1.jpg");
+    /*width: 2000px;*/
+    /*height: 1282px;*/
+    width: 1000px;
+    height: 641px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#two{
+    position: absolute;
+    background-image: url("../images/2.jpg");
+    width: 1000px;
+    height: 641px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+}

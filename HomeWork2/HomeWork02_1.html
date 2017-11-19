@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>作业2-1</title>
+	<link rel="stylesheet" type="text/css" href="css/HomeWork02_1.css">
+    <script type="text/javascript">
+//这个是用一个函数中有循环来实现的，暂时想不到方法来解决两个变化
+//法2，结合两个跳转的函数来实现
+//        function swift1(obj) {//构建数组，只是进行相应的判断
+//            var tabs=["one","two"];
+//            var points = ["active", "hidden"];
+//            for(var i=0;i<2;i++) {  //循环刷新
+//                if (tabs[i] == obj) {    //对应的，显示为块block
+//                    document.getElementById(tabs[i]).style.opacity = "1";
+//                    swift2(points[i]);
+//                }
+//                else {                //其余的不显示
+//                    document.getElementById(tabs[i]).style.opacity = "0";
+//                }
+//
+//            }
+//        }
+//        function swift2(obj) {
+//            var points = ["active", "hidden"];
+//            for (var i = 0; i < 2; i++) {
+//                if (points[i] == obj) {
+//                    document.getElementById(points[i]).style.background = "#007aff";
+//                }
+//                else {
+//                    document.getElementById(points[i]).style.background = "#fff";
+//                }
+//            }
+//        }
+//这个是分两个函数来实现切换
+        function swift1(obj) {
+            document.getElementById('hidden').style.background='white';
+            document.getElementById('two').style.opacity="0";
+            document.getElementById('one').style.opacity="1";
+            document.getElementById('active').style.background="#007aff";
+        }
+        function swift2(ovj) {
+            document.getElementById('active').style.background='white';
+            document.getElementById('one').style.opacity="0";
+            document.getElementById('two').style.opacity="1";
+            document.getElementById('hidden').style.background="#007aff";
+        }
+    </script>
+</head>
+<body>
+	<div class="imagesFrame">
+		<div>
+            <div id="one">
+                <div class="footFrame">
+                    <div class="footFrameLeft">
+                        <h3><a href="http://www.dgut.edu.cn" target="_blank" title="感受办学特色，领略魅力莞工">感受办学特色，领略魅力莞工--东莞理工学院校园开放日顺利进行</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div id="two">
+                <div class="footFrame">
+                    <div class="footFrameLeft">
+                        <h3><a href="http://www.dgut.edu.cn" target="_blank" title="感受办学特色，领略魅力莞工">红红火火恍恍惚惚</a></h3>
+                    </div>
+                </div>
+            </div>
+			<!--<img src="images/1.jpg" width="1000px" height="641px">-->
+		</div>
+
+		<div class="pointFrame">
+            <a href="#"><span id="active" onmouseover='swift1("one")'></span></a>
+            <!--<a href="#"><span id="hidden" onmouseover='swift1("two")'></span></a>-->
+            <a href="#"><span id="hidden" onmouseover='swift2("two")'></span></a>
+		</div>
+	</div>
+</body>
+</html>

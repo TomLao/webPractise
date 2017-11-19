@@ -1,0 +1,12 @@
+h1{
+	color: red;
+	font-style: italic;
+	font-size: 28px;
+}
+.one{
+	width: 600px;
+	height: 200px;
+	/*align: center;*/
+	margin: auto;
+	/*border:2px solid; */
+}

@@ -1,0 +1,12 @@
+
+.pic{
+	width:800px;
+	height:600px;
+	margin-left:400px;
+	background-image:url(../images/beijin.jpg);
+}
+hr{
+	width: 750px;
+	border-top: 4px solid red;
+	margin: auto;
+}

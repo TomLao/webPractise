@@ -1,0 +1,25 @@
+.three{
+    width:50%;
+    overflow: hidden;
+    margin:auto;
+    background-color: rgb(187,221,255);
+    border: 2px solid rgb(0,0,102);
+}
+#mydiv{
+    width:70%;
+    overflow: hidden;
+    text-align: center;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#content{
+    width: 50%;
+    height:80px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+#button{
+    margin-left:35%;
+    margin-bottom: 20px;
+}

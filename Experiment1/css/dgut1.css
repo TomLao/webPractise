@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*全局设定*/
+body,td,th {
+	font-family: "宋体";
+	font-size: 14px;
+	color: #000000;
+}
+a:link {
+	color: #000000;
+}
+a:active {
+	color: #4615D4;
+}
+h1 {
+	font-size: 20px;
+	color: #E9090D;
+}
+h2 {
+	font-size: 18px;
+	color: #4615D4;
+}
+h3 {
+	font-size: 10px;
+	color: #000;
+}
+
+
+.div1{
+	width: 1000px;
+	margin: auto;	
+	/*background-color:#adc333;*/
+}
+.tdLeft {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 3px;
+	border-bottom: 3px solid #4615D4;
+}
+.tdRight {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 3px;
+	border-bottom: 3px solid #CCC;
+}
+.textCenter {
+	text-align: center;
+}
+.text1 {
+	line-height: 25px;
+}
+.text2{
+	text-indent:2em;
+}
+.center{
+	margin: auto;
+}
+#pic{
+	width:1000px;
+	display:block;
+	margin-left:100px;
+/*	background-color:#003471;*/
+}

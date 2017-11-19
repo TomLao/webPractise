@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>tab实现方式2</title>
+    <link rel="stylesheet" type="text/css" href="css/HomeWork02_JS.css">
+    <script type="text/javascript">
+        //		JS思路二：这个是先置所有为none，在根据数值（注意后面的0，1，2）来变化显示内容
+        function ChangeBody(num) {
+            for(var i=0;i<3;i++) {  //循环刷新
+                document.getElementById("tabBodyFrame_"+i).style.display = "none";
+            }
+            document.getElementById("tabBodyFrame_"+num).style.display="block";
+        }
+    </script>
+</head>
+<body>
+<!--这里用嵌套的tab来实现切换功能-->
+<div class="tabFrame">
+    <div class="tabHeadFrame">
+        <!--<p>放鼠标在tab上显示对应信息</p>-->
+        <div class="tabHead" onmouseover="ChangeBody('0')">
+            tab1
+        </div>
+        <div class="tabHead" onmouseover="ChangeBody('1')">
+            tab2
+        </div>
+        <div class="tabHead" onmouseover="ChangeBody('2')">
+            tab3
+        </div>
+    </div>
+    <div id="tabBodyFrame">
+        <div class="tabBodyShow" id="tabBodyFrame_0">此处显示新Div 1标签内容</div>
+        <div class="tabBodyShow" id="tabBodyFrame_1">此处显示新Div 2标签内容</div>
+        <div class="tabBodyShow" id="tabBodyFrame_2">此处显示新Div 3标签内容</div>
+    </div>
+</div>
+</body>
+</html>

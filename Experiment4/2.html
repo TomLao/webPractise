@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>输入表单</title>
+        <link rel="stylesheet" href="css/2.css" type="text/css">
+        <script type="text/javascript" src="js/2.js"></script>
+	</head>
+	<body>
+		<div class="frame">
+			<h2>个人设置--个人资料</h2>
+			<div class="input_frame">
+				<form >
+					<table class="content">
+						<tr>
+							<td><label for="name">用户昵称：</label></td>
+							<td>
+								<input type="text" name="nname" id="nname"/>
+								<span id="tip_name"></span>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="personal_name">个性名称：</label></td>
+							<td>
+								<input type="text" name="personal_name" id="personal_name"/>
+								<span id="tip_personal_name"></span>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="sex">性别：</label></td>
+							<td>
+								<select name="sex" id="sex">
+									<option id="init" selected="selected">请选择</option>
+									<option>男</option>
+									<option>女</option>
+								</select>
+								<span id="tip_sex"></span>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="picture">形象照片：</label></td>
+							<td>
+								<input type="text" name="file"><input name="file" type="file">
+								<span id="tip_picture"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>兴趣爱好：</td>
+							<td id="hobit">
+								<input type="checkbox" name="checkselete"/>阅读
+								<input type="checkbox" name="checkselete"/>上网
+								<input type="checkbox" name="checkselete"/>运动
+								<input type="checkbox" name="checkselete"/>音乐
+								<input type="checkbox" name="checkselete"/>影视
+								<input type="checkbox" name="checkselete"/>旅游
+								<span id="tip_hobit"></span>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="email">电子邮件</label></td>
+							<td>
+								<input type="text" name="email" id="email">
+								<span id="tip_email"></span>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="calling">联系方式</label></td>
+							<td>
+								<input type="text" name="calling" id="calling">
+								<span id="tip_calling"></span>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="phone">手机号码</label></td>
+							<td>
+								<input type="text" name="phone" id="phone">
+								<span id="tip_phone"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>以上资料：</td>
+							<td>
+								<input type="radio" name="secret" />完全公开
+								<input type="radio" name="secret"/>仅好友可见
+								<input type="radio" checked="checked" name="secret"/>完全保密
+								<span id="tip_secret"></span>
+							</td>
+						</tr>
+					</table>
+				</form>
+				<br/>
+				<div id="bottom">
+					<input type="submit" id="submit" value="更新" onclick="check()" />
+					<input type="reset" id="reset" value="清除" onclick="clearAll()" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

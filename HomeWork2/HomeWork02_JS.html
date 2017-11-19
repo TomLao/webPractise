@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>tab实现方式1</title>
+	<link rel="stylesheet" type="text/css" href="css/HomeWork02_JS.css">
+	<script type="text/javascript">
+//		JS思路一：创建对应的id，将其传来，构建数组来进行相应的判断，直接修改所需要的样式style
+		function ChangeBody(obj) {
+		    var tabs=["one","two","three"];//构建数组，只是进行相应的判断
+		    for(var i=0;i<3;i++) {  //循环刷新
+		        if(tabs[i]==obj)    //对应的，显示为块block
+                    document.getElementById(tabs[i]).style.display = "block";
+                else                //其余的不显示
+                    document.getElementById(tabs[i]).style.display="none";
+            }
+		}
+	</script>
+</head>
+<body>
+<!--这里用嵌套的tab来实现切换功能-->
+	<div class="tabFrame">
+		<div class="tabHeadFrame">
+            <!--<p>放鼠标在tab上显示对应信息</p>-->
+			<div class="tabHead" onmouseover="ChangeBody('one')">
+				tab1
+                
+            </div>
+			<div class="tabHead" onmouseover="ChangeBody('two')">
+                tab2
+            </div>
+			<div class="tabHead" onmouseover="ChangeBody('three')">
+                tab3
+            </div>
+		</div>
+		<div class="tabBodyFrame">
+			<div class="tabBodyShow" id="one">此处显示新Div 1标签内容</div>
+			<div class="tabBodyShow" id="two">此处显示新Div 2标签内容</div>
+			<div class="tabBodyShow" id="three">此处显示新Div 3标签内容</div>
+		</div>
+	</div>
+</body>
+</html>

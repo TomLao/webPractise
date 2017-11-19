@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>实验二_动态版</title>
+    <link rel="stylesheet" href="css/Accordion_JS.css" type="text/css">
+    <style>
+        a:link, a:visited{
+            text-decoration: none;
+        }
+        h3:hover{
+            background-color: #dddddd;
+        }
+    </style>
+    <script type="text/javascript">
+        function openBody(num){
+            var bodys=['body_1','body_2','body_3'];
+            var heads=['Head_1','Head_2','Head_3'];
+            var icons=['icon_1','icon_2','icon_3'];
+            for (var i = 0; i <3; i++) {
+//                document.getElementById(bodys[i]).style.display="none";
+                document.getElementById(heads[i]).style.background="#f0f0f0";
+                document.getElementById(icons[i]).style['background-position']="-47px -187px";
+                document.getElementById(heads[i]).style['border-radius']="6px";
+            }
+            if(document.getElementById('body_'+num).style.display==="block") {
+                document.getElementById('body_' + num).style.display = "none";
+            }
+            else {
+                document.getElementById('body_' + num).style.display = "block";
+                document.getElementById('Head_' + num).style.background = '#7E97F5';
+                document.getElementById("icon_" + num).style['background-position'] = "-63px -187px";
+                document.getElementById('Head_' + num).style['border-bottom-left-radius'] = "0px";
+                document.getElementById('Head_' + num).style['border-bottom-right-radius'] = "0px";
+            }
+//            document.getElementById('body_'+num).style.display="block";
+//            document.getElementById('Head_'+num).style.background='#7E97F5';
+//            document.getElementById("icon_"+num).style['background-position']="-63px -187px";
+//            document.getElementById('Head_'+num).style['border-bottom-left-radius']="0px";
+//            document.getElementById('Head_'+num).style['border-bottom-right-radius']="0px";
+            // 注意这里的带 - 的要用方括号括起，如['background-position']
+        }
+    </script>
+</head>
+<body>
+<div class="head">
+    <a href="#">
+        <h3 class="hiddentHead" id="Head_1" onclick="openBody('1')">
+            <div class="hidden_icon" id="icon_1"></div>
+            First
+        </h3>
+    </a>
+    <div id="body_1" class="activeBody">
+        <span>哈哈呵呵哈哈呵呵111111</span>
+    </div>
+
+    <a href="#">
+        <h3 class="hiddentHead" id="Head_2" onclick="openBody('2')">
+            <div class="hidden_icon" id="icon_2"></div>
+            Second
+        </h3>
+    </a>
+    <div id="body_2" class="activeBody">
+        <span>哈哈呵呵哈哈呵呵222222</span>
+    </div>
+
+    <a href="#">
+        <h3 class="hiddentHead" id="Head_3" onclick="openBody('3')">
+            <div class="hidden_icon" id="icon_3"></div>
+            Third
+        </h3>
+    </a>
+    <div id="body_3" class="activeBody">
+        <span>哈哈呵呵哈哈呵呵333333</span>
+    </div>
+</div>
+
+</body>
+</html>

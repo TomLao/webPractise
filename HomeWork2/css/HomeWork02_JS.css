@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+* {                  /* 清除不同浏览器的不同外边距 */
+	margin: 0;
+	padding: 0;	
+}
+
+.tabFrame{
+	width: 480px;
+	height: 300px;
+	border: 2px solid red;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.tabHeadFrame{
+	width: 480px;
+	height: 40px;
+	background-color: #f0f0f0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.tabHeadActive{
+	width: 160px;
+	height: 40px;
+	background-color: #fff;
+    float: left;
+
+}
+.tabHead{
+    width:158px;
+    height:40px;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
+    float: left;
+}
+div.tabHead:hover{            /*怎么实现动态*/
+    background-color: #E4E4E4;
+	border-bottom-color: #fff;
+}
+/*div.tabHead:hover div.tabBodyShow{
+    visibility: visible;
+}*/
+/*.tabBodyFrame{*/
+    /*width: 480px;*/
+    /*height: 260px;*/
+/*}*/
+.tabFrame .tabBodyShow, .tabFrame .tabBody{
+    position: absolute;
+    left: 0px;
+    top:50px;
+    width:480px;
+    height: 260px;
+
+}
+.tabBodyShow{
+    /*visibility: hidden;*/
+    display:none;
+    /*z-index: 1;*/
+    /*border-right: 1px solid #E9090D;*/
+    /*border-bottom: 1px solid #E9090D;*/
+    /*border-left: 1px solid #E9090D;*/
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.clear{
+    clear: both;
+}

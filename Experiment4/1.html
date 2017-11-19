@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>算术运算</title>
+		<script type="text/javascript" src="js/1.js"></script>
+	</head>
+	<body>
+		<p>请输入两个数进行简单的运算</p>
+		<form>
+			<input type="text" id="firstNum" onblur="check()"/>
+			<select name="sig" id="sig">
+				<option>+</option>
+				<option>-</option>
+				<option>*</option>
+				<option>/</option>
+			</select>
+			<input type="text" id="secondNum" onblur="check()"/>
+			<input type="button" name="button" value="=" onclick="cal()"/>
+			<input type="text" id="out"/>
+		</form>
+	</body>
+</html>
