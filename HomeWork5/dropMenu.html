@@ -8,6 +8,7 @@
 </head>
 
 <body>
+<!--二级菜单-->
     <div id="two-degree-menu">
         <div class="frame" id="frame">
             <ul>
@@ -36,6 +37,102 @@
                 <li><a href="#">其他</a></li>
             </ul>
         </div>
+    </div>
+
+<!--三级菜单-->
+    <div id="three-degree-menu">
+        <div class="frame" id="three-degree-frame">
+            <ul>
+                <li><a href="#">主页</a></li>
+                <li onmouseover="showsub(this)" onmouseout="hidesub(this)"><a href="#">标题1</a>
+                    <ul>
+                        <!--化重点，move（）函数要在showsub（）之后-->
+                        <li onmouseover="showsub(this)" onmousemove="move(this)" onmouseout="hidesub(this)">
+                            <a href="#">内容1-1</a>
+                            <ul>
+                                <li><a href="#">内容1-1-1</a></li>
+                                <li><a href="#">内容1-1-2</a></li>
+                                <li><a href="#">内容1-1-3</a></li>
+                            </ul>
+                        </li>
+                        <li onmouseover="showsub(this)" onmousemove="move(this)" onmouseout="hidesub(this)">
+                            <a href="#">内容1-2</a>
+                            <ul>
+                                <li><a href="#">内容1-2-1</a></li>
+                                <li><a href="#">内容1-2-2</a></li>
+                                <li><a href="#">内容1-2-3</a></li>
+                            </ul>
+                        </li>
+                        <li onmouseover="showsub(this)" onmousemove="move(this)" onmouseout="hidesub(this)">
+                            <a href="#">内容1-3</a>
+                            <ul>
+                                <li><a href="#">内容1-3-1</a></li>
+                                <li><a href="#">内容1-3-2</a></li>
+                                <li><a href="#">内容1-3-3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li onmouseover="showsub(this)" onmouseout="hidesub(this)"><a href="#">标题2</a>
+                    <ul>
+                        <li onmouseover="showsub(this)" onmousemove="move(this)" onmouseout="hidesub(this)">
+                            <a href="#">内容2-1</a>
+                            <ul>
+                                <li><a href="#">内容2-1-1</a></li>
+                                <li><a href="#">内容2-1-2</a></li>
+                                <li><a href="#">内容2-1-3</a></li>
+                            </ul>
+                        </li>
+                        <li onmouseover="showsub(this)" onmousemove="move(this)" onmouseout="hidesub(this)">
+                            <a href="#">内容2-2</a>
+                            <ul>
+                                <li><a href="#">内容2-2-1</a></li>
+                                <li><a href="#">内容2-2-2</a></li>
+                                <li><a href="#">内容2-2-3</a></li>
+                            </ul>
+                        </li>
+                        <li onmouseover="showsub(this)" onmousemove="move(this)" onmouseout="hidesub(this)">
+                            <a href="#">内容2-3</a>
+                            <ul>
+                                <li><a href="#">内容2-3-1</a></li>
+                                <li><a href="#">内容2-3-2</a></li>
+                                <li><a href="#">内容2-3-3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li onmouseover="showsub(this)" onmouseout="hidesub(this)"><a href="#">标题3</a>
+                    <ul>
+                        <li onmouseover="showsub(this)" onmousemove="move(this)" onmouseout="hidesub(this)">
+                            <a href="#">内容3-1</a>
+                            <ul>
+                                <li><a href="#">内容3-1-1</a></li>
+                                <li><a href="#">内容3-1-2</a></li>
+                                <li><a href="#">内容3-1-3</a></li>
+                            </ul>
+                        </li>
+                        <li onmouseover="showsub(this)" onmousemove="move(this)" onmouseout="hidesub(this)">
+                            <a href="#">内容3-2</a>
+                            <ul>
+                                <li><a href="#">内容3-2-1</a></li>
+                                <li><a href="#">内容3-2-2</a></li>
+                                <li><a href="#">内容3-2-3</a></li>
+                            </ul>
+                        </li>
+                        <li onmouseover="showsub(this)" onmousemove="move(this)" onmouseout="hidesub(this)">
+                            <a href="#">内容3-3</a>
+                            <ul>
+                                <li><a href="#">内容3-3-1</a></li>
+                                <li><a href="#">内容3-3-2</a></li>
+                                <li><a href="#">内容3-3-3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">其他</a></li>
+            </ul>
+        </div>
+
     </div>
 </body>
 </html>
