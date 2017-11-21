@@ -1,0 +1,42 @@
+*{
+	margin:0;
+	padding:0;
+}
+.frame{
+	background: rgb(187,221,255);
+	height: 40px;
+	width: 450px;
+	margin: auto;
+}
+ul{
+    list-style: none;
+}
+ul li{
+	float: left;
+	line-height: 40px;
+	text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width:90px;
+    height:40px;
+}
+a:hover{
+    background-color: #666;
+    color: #ffffff;
+}
+ul li ul li{
+	background-color: #eee;
+	float: none;
+}
+ul li ul{
+    display: none;
+}
+ul li ul li a:link,ul li ul li a:visited{
+    background-color: #eeeeee;
+}
+ul li ul li a:hover{
+    background-color: #009933;
+}
