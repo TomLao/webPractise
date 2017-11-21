@@ -6,6 +6,7 @@ function hidesub(obj){
 	var submenu=obj.getElementsByTagName('ul')[0];
 	submenu.style.display="none";
 }
+
 //重点，计算三级菜单的绝对定位的偏移量
 function move(obj) {
     var thirdmenu=obj.getElementsByTagName('ul')[0];
