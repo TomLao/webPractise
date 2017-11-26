@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript下拉菜单</title>
+<link href="css/hmenu.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="horizon-center" style="width:800px">
+	<ul id="navigation">
+		<li> <a href="#">栏目1</a>
+			<ul>
+				<li><a href="#">栏目1->菜单1</a></li>
+				<li><a href="#">栏目1->菜单2</a></li>
+				<li><a href="#">栏目1->菜单3</a></li>
+				<li><a href="#">栏目1->菜单4</a></li>
+			</ul>
+		</li>
+		<li> <a href="#">栏目2</a>
+			<ul>
+				<li><a href="#">栏目2->菜单1</a></li>
+				<li><a href="#">栏目2->菜单2</a></li>
+				<li><a href="#">栏目2->菜单3</a></li>
+				<li><a href="#">栏目2->菜单4</a></li>
+				<li><a href="#">栏目2->菜单5</a></li>
+			</ul>
+		</li>
+		<li> <a href="#">栏目3</a>
+			<ul>
+				<li><a href="#">栏目3->菜单1</a></li>
+				<li><a href="#">栏目3->菜单2</a></li>
+				<li><a href="#">栏目3->菜单3</a></li>
+				<li><a href="#">栏目3->菜单4</a></li>
+				<li><a href="#">栏目3->菜单5</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript" src="js/hmenu.js"></script>
+<script type="text/javascript">
+	var params={
+		"id": "navigation"	
+	};
+	
+	var hMenu = new HMenu(params);
+</script>
+</body>
+</html>

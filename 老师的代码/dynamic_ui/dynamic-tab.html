@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+	<link href="css/tab.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+		//document.getElementById("tabBody1").setAttribute("class","tabBodyShow");
+        function mOver(obj)
+        {	//调整tab头部  第一种方案
+/*            document.getElementById("tab1").setAttribute("class","tabHead");
+            document.getElementById("tab2").setAttribute("class","tabHead tabHeadCenter");
+            document.getElementById("tab3").setAttribute("class","tabHead");
+			oldclss=obj.getAttribute("class");	            
+            obj.setAttribute("class",oldclss+" tabHeadShow");//显示当前的tab	
+						
+			//调整tab体
+           	document.getElementById("tabBody1").setAttribute("class","tabBody");//隐藏所有tabBody
+            document.getElementById("tabBody2").setAttribute("class","tabBody");
+            document.getElementById("tabBody3").setAttribute("class","tabBody");			
+			
+			if(obj.getAttribute("id")=="tab1")//显示某个tabBody
+				obj=document.getElementById("tabBody1");
+			else if(obj.getAttribute("id")=="tab2")
+				obj=document.getElementById("tabBody2");
+			else
+				obj=document.getElementById("tabBody3");
+			
+			obj.setAttribute("class","tabBody tabBodyShow");*/
+				
+			//第二种方案
+				//调整tab头部  第二种方案
+			for(i=0;i<obj.parentNode.children.length;i++){//children表示元素（标签）子节点数组
+				obj.parentNode.children[i].setAttribute("class","tabHead");
+			}
+			obj.parentNode.children[1].setAttribute("class","tabHead tabHeadCenter");
+			oldclss=obj.getAttribute("class");	            
+            obj.setAttribute("class",oldclss+" tabHeadShow");//显示当前的tab	
+					
+			
+			//调整tab体
+			objs=obj.parentNode.parentNode.children[1].children;
+			//	alert(objs.length);
+			for(i=0;i<objs.length;i++){
+				objs[i].setAttribute("class","tabBody");
+			}
+			
+			var k;
+			for(i=0;i<obj.parentNode.children.length;i++){
+				if(obj==obj.parentNode.children[i])
+					k=i;//记录要显示的tab号	
+			}
+			//alert(k);
+			
+			objs[(k+2)%3].setAttribute("class","tabBody tabBodyShow");//（k+2）%3，用于找到显示的tab体
+			
+        }
+    </script>
+</head>
+
+<body>
+<p>a</p><p>a</p><p>a</p>
+<div class="tabFrame">
+	
+	  <div class="tabHeadDiv">
+			<div class="tabHead tabHeadShow" onmouseover="mOver(this)"  id="tab1">tab1</div>  <!--this表示div标签自身-->
+			<div class="tabHead tabHeadCenter" onmouseover="mOver(this)" id="tab2">tab2</div>
+			<div class="tabHead" onmouseover="mOver(this)" id="tab3">tab3</div>
+	
+	  </div>
+	  <div> 
+		  <div class="tabBody" id="tabBody2"><br /> Div 222容</div>
+		  <div class="tabBody" id="tabBody3"><br />新 Div 333标签的内容</div>
+		  <div class="tabBody tabBodyShow" id="tabBody1"><br />此处显示新 Div 11标签的内容</div>  <!--为了能显示在最前面，放在了最后-->
+	  </div>
+	
+  
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

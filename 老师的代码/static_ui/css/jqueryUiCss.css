@@ -1,0 +1,147 @@
+@charset "utf-8";
+* {                  /* 清除不同浏览器的不同外边距 */
+	margin: 0;	padding: 0;	}
+
+/*通用的css开始*/
+.horizon-center{
+	margin-left:auto;
+	margin-right:auto;	
+}
+.icon{
+	display: inline-block;
+	background-repeat: no-repeat;
+	vertical-align:middle;
+	width: 16px;
+    height: 16px;
+}
+.icon-inactive{
+	background-image: url(../images/ui-icons_444444_256x240.png);}
+	
+.icon-active{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);}
+
+.icon-triangle-solid-down{
+	background-position: -65px -18px;}
+	
+.icon-triangle-solid-left{
+	background-position: -32px -18px;}
+	
+.corner-all{
+	border-radius: 3px;	}
+	
+.icon-circle-triangle-left{
+	background-position: -80px -192px;
+}
+.icon-circle-triangle-right{
+	background-position: -48px -192px;
+}
+/*通用的cs结束*
+	
+/*accordion的css开始*/
+.accordion-header {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	height: 30px;
+	cursor: pointer;
+	line-height: 30px;
+	padding-left: 7px;
+	margin-top: 2px;
+}
+.accordion-header-inactive {
+	border: 1px solid #c5c5c5;
+	background: #f6f6f6;
+	color: #454545;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.accordion-header-inactive:hover{
+	background: #ededed;}
+	
+.accordion-header-active {
+	border: 1px solid #003eff;
+    background: #007fff;
+    color: #ffffff;
+}
+
+.accordion-content{
+	padding: 10px 30px;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+	color: #333333;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+/*accordion的css结束*/
+
+/*Datepicker的css开始*/
+.datepicker-frame{
+	border: 1px solid #c5c5c5;
+	background: #ffffff;
+	padding: 3px;	
+	width: 17em;
+}
+.datepicker-header{
+	border: 1px solid #dddddd;
+	background: #e9e9e9;
+	color: #333333;
+	font-weight: bold;
+	padding: 4px;	
+}
+.datepicker-pre-next{
+	display:block;
+	border: 1px solid #e9e9e9;
+	padding:0.275em;
+	width: 1.25em;
+    height: 1.25em;
+}
+.datepicker-pre{
+	float:left;}
+	
+.datepicker-next{
+	float:right;}
+	
+.datepicker-pre-next:hover, .datepicker-frame td a:hover{	
+	border: 1px solid #cccccc;
+    background: #ededed;
+}
+	
+.datepicker-title{
+	line-height: 1.8em;
+    text-align: center;
+}
+.datepicker-frame table{
+	width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin: 0 0 .4em;
+}
+.datepicker-frame table th {
+    padding: .7em .3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+}
+.datepicker-frame td{
+	border: 0;
+    padding: 1px;	
+}
+
+.datepicker-td-default{
+	border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;	
+}
+.datepicker-frame td a {
+    display: block;
+    padding: .2em;
+    text-align: right;
+    text-decoration: none;
+}
+
+.datepicker-td-highlight{
+    border: 1px solid #dad55e;
+    background: #fffa90;
+    color: #777620;	
+}
+/*Datepicker的css结束*/

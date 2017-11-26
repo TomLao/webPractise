@@ -1,0 +1,63 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.horizon-center{
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+.imagesSlider a:link {
+	color: #000000;
+	text-decoration: none;
+}
+.imagesSlider a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+.imagesSlider a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+.imagesSlider a:active {
+	text-decoration: none;
+	color: #000000;
+}
+
+.imagesSlider {		
+	position: relative;
+	left: 0px;
+	right: 0px;
+}
+
+.imagesFootFrame {
+	height: 50px;
+	position: absolute;
+	background-color: #F8F8F8;
+	opacity: 0.3;
+}
+.imagesFootLeft {
+	height: 50px;
+	float: left;
+	line-height: 50px;
+}
+.imagesFootRight {
+	height: 50px;
+	float: left;
+}
+
+.imagesFootRight li {
+	list-style-type: none;
+	float: left;	
+}
+.imagesFootRight a  {
+	background-image: url(../images/picNow.png);
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 50px;
+	display: block;
+	background-position: -20px center;
+}
+

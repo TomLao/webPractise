@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+	<link href="css/tab.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<p>a</p><p>a</p><p>a</p>
+<div class="tabFrame">
+  <div class="tabHeadDiv">
+  		<div class="tabHead tabHeadShow">tab1</div>  <!--this表示div标签自身-->
+  		<div class="tabHead tabHeadCenter">tab2</div>
+        <div class="tabHead">tab3</div>
+
+  </div>
+  <div> 
+      <div class="tabBody"><br /> Div 222容</div>
+      <div class="tabBody"><br />新 Div 333标签的内容</div>
+      <div class="tabBody tabBodyShow"><br />此处显示新 Div 11标签的内容</div>  <!--为了能显示在最前面，放在了最后-->
+  </div>
+
+  
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript">
+		var tab = new Tab();
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/jqueryUiCss.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="horizon-center" style="width:400px">
+		<div id="datepicker"></div>
+	</div>
+	<div class="horizon-center" style="width:400px">
+		<div id="datepicker1"></div>
+	</div>	
+	<script type="text/javascript" src="js/datepicker.js"></script>
+	<script type="text/javascript">
+		var params={
+			"id": "datepicker"	
+		};
+		var params1={
+			"id": "datepicker1"	
+		};		
+		var datepicker = new Datepicker(params);
+		var datepicker1 = new Datepicker(params1);
+	</script>
+
+</body>
+</html>

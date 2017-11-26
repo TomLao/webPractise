@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/jqueryUiCss.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="horizon-center" style="width:600px">
+		<div id="myAccordion">
+			<div>First</div>
+			<div>
+				<p>大家好</p>
+			</div>				
+			<div>Second</div>
+			<div>
+				<p>Nam dui erat, auctor a, dignissim quis.</p>
+				<p>Nam dui erat, auctor a, dignissim quis.</p>
+			</div>
+			<div>Third</div>
+			<div>
+				<p>大家好</p>
+			</div>		
+		</div>	
+		<div id="myAccordion1">
+			<div>First</div>
+			<div>
+				<p>大家好</p>
+			</div>	
+			<div>First</div>
+			<div>
+				<p>大家好</p>
+			</div>							
+			<div>Second</div>
+			<div>
+				<p>Nam dui erat, auctor a, dignissim quis.</p>
+				<p>Nam dui erat, auctor a, dignissim quis.</p>
+			</div>
+			<div>Third</div>
+			<div>
+				<p>大家好</p>
+			</div>		
+		</div>			
+	</div>
+	
+	
+<script type="text/javascript" src="js/accordion.js"></script>
+<script type="text/javascript">
+	var params={
+		"id": "myAccordion",
+		"width": 400,
+		"height": 200
+	};
+	var params1={
+		"id": "myAccordion1",
+		"width": 500,
+		"height": 200
+	};		
+	var accordion = new Accordion(params);
+	var accordion1 = new Accordion(params1);
+</script>
+</body>
+</html>

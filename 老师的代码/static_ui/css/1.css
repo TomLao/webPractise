@@ -1,0 +1,55 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+.imagesFrame {
+	width: 740px;
+	height: 345px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	left: 0px;
+	right: 0px;
+}
+
+
+.imagesFootFrame {
+	height: 50px;
+	position: absolute;
+	top: 295px;
+	width: 740px;
+	background-color: #F8F8F8;
+	opacity: 0.3;
+}
+.imagesFootLeft {
+	height: 50px;
+	width: 400px;
+	float: left;
+	line-height: 50px;
+}
+.imagesFootRight {
+	height: 50px;
+	width: 340px;
+	float: left;
+}
+
+.imagesUl li {
+	list-style-type: none;
+	float: left;	
+}
+.imagesUl a  {
+	background-image: url(../images/picNow.png);
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 50px;
+	display: block;
+	background-position: -20px center;
+}
+.aa1 {
+	border-radius: 100%;
+	width: 3px;
+	height: 3px;
+	border: 1px solid #4615D4;
+	display: block;
+}
