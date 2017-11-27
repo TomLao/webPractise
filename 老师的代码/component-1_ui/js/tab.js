@@ -20,7 +20,7 @@ Tab.prototype.setEvent = function() {
 			
 			//调整tab体
 			objs=this.parentNode.parentNode.children[1].children;
-			//	alert(objs.length);
+				// alert(objs.length);
 			for(i=0;i<objs.length;i++){
 				objs[i].setAttribute("class","tabBody");
 			}

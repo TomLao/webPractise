@@ -6,14 +6,20 @@ function ImagesPlay() {
 	this.t=null;
 }
 
+//prototype原型属性使您有能力向对象添加属性和方法
+//既为对象添加成员函数，同时该函数名为start，后面是匿名函数
+//== function start(j){}
 ImagesPlay.prototype.start=function(j) {
 	this.changeImages(this);
-	this.t=setInterval(this.changeImages,2000,this);
+	this.t=setInterval(this.changeImages,2000,this);//隔2000毫秒调用this.changeImages函数
+//setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。
+//setInterval() 方法会不停地调用函数，直到 clearInterval() 被调用或窗口被关闭。
+//由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。
 };
 
 ImagesPlay.prototype.mouseover=function(j) {
 	this.t=clearInterval(this.t);	
-	this.nowImage=j;
+	this.nowImage=j;//改变成员变量，该类下的所有函数都可以读取到该变量变为j了，不用传值
 	this.gotoImage();	
 };
 
@@ -21,14 +27,15 @@ ImagesPlay.prototype.mouseout = function() {
 	this.t=setInterval(this.changeImages,2000,this);
 };
 
+//这函数设置事件，鼠标移入移出
 ImagesPlay.prototype.setEvent = function() {
 	images=this;
-	var imageLis=document.getElementsByClassName("imageLi");
+	var imageLis=document.getElementsByClassName("imageLi");//有多个
 	var k;
 	for( k=0;k<imageLis.length;k++){
 		let w=k;	
-		imageLis[w].children[0].onmouseover=function() {
-      		images.mouseover(w);
+		imageLis[w].children[0].onmouseover=function() {//这是onmouseover变为了一个函数，鼠标放上来就调用
+      		images.mouseover(w);	//调用函数
     	};
 				
 		imageLis[w].children[0].onmouseout=function() {

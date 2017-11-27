@@ -75,3 +75,7 @@ a:hover .left, a:hover .right{
     background-color: #fff;
     border: 2px solid #fff;
 }
+.clicked{
+    background-color: yellow;
+    border: 2px solid #D4D4D4;
+}
