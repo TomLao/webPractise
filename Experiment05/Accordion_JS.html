@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>实验二_动态版</title>
+    <link rel="stylesheet" href="css/Accordion_JS.css" type="text/css">
+    <style>
+        a:link, a:visited{
+            text-decoration: none;
+        }
+        h3:hover{
+            background-color: #dddddd;
+        }
+    </style>
+    <script type="text/javascript" src="js/accordion.js"></script>
+</head>
+<body>
+<div class="head">
+    <a href="#">
+        <h3 class="hiddentHead" id="Head_1" onclick="openBody('1')">
+            <div class="hidden_icon" id="icon_1"></div>
+            First
+        </h3>
+    </a>
+    <div id="body_1" class="activeBody">
+        <span>哈哈呵呵哈哈呵呵111111</span>
+    </div>
+
+    <a href="#">
+        <h3 class="hiddentHead" id="Head_2" onclick="openBody('2')">
+            <div class="hidden_icon" id="icon_2"></div>
+            Second
+        </h3>
+    </a>
+    <div id="body_2" class="activeBody">
+        <span>哈哈呵呵哈哈呵呵222222</span>
+    </div>
+
+    <a href="#">
+        <h3 class="hiddentHead" id="Head_3" onclick="openBody('3')">
+            <div class="hidden_icon" id="icon_3"></div>
+            Third
+        </h3>
+    </a>
+    <div id="body_3" class="activeBody">
+        <span>哈哈呵呵哈哈呵呵333333</span>
+    </div>
+</div>
+
+</body>
+</html>

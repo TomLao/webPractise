@@ -1,0 +1,93 @@
+*{
+	margin:0;
+	border:0;
+}
+.head{
+	width: 500px;
+	height: 300px;
+    margin: auto;
+
+}
+.hiddentHead{
+	width: 500px;
+	height: 30px;
+	background-color: #f0f0f0;
+	border: 2px solid #DDDDDD;
+	border-radius: 6px;
+	margin-top: 2px;
+}
+/*图片定位*/
+.hidden_icon {
+	float: left;
+	background: url(../images/ui-icons_444444_256x240.png);
+	width: 18px;
+	height: 20px;
+	background-position: -47px -187px;
+	background-repeat: no-repeat;
+}
+.active_icon{
+    float: left;
+    background: url(../images/ui-icons_444444_256x240.png);
+    width: 18px;
+    height: 20px;
+    background-position: -63px -187px;
+    background-repeat: no-repeat;
+	/*background-position: -200px -120px;*/	
+}
+/*.hiddenBody{
+	width: 500px;
+	height: 100px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	visibility:hidden;
+}*/
+.activeHead{
+	width: 500px;
+	height: 30px;
+	background-color: #7E97F5;
+	border: 2px solid #7E97F5;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	margin-top: 2px;
+	/*color: #FFFFFF;*/
+}
+.activeBody{
+	display: none;
+	width: 500px;
+	height: 50px;
+	border-right: 2px solid #DDDDDD;
+	border-bottom: 2px solid #DDDDDD;
+	border-left: 2px solid #DDDDDD;
+	border-bottom-left-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+}
+/*#one{
+	display: none;
+    width: 500px;
+    height: 50px;
+    border-right: 2px solid #DDDDDD;
+    border-bottom: 2px solid #DDDDDD;
+    border-left: 2px solid #DDDDDD;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+}
+#two{
+	display: none;
+    width: 500px;
+    height: 50px;
+    border-right: 2px solid #DDDDDD;
+    border-bottom: 2px solid #DDDDDD;
+    border-left: 2px solid #DDDDDD;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+}
+#three{
+	display: none;
+    width: 500px;
+    height: 50px;
+    border-right: 2px solid #DDDDDD;
+    border-bottom: 2px solid #DDDDDD;
+    border-left: 2px solid #DDDDDD;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+}*/
