@@ -31,4 +31,46 @@ $(function(){
             change(index);
         },2000);
     }
+
+    //子菜单
+    var subMenu=$(".subMenu");
+    var mainMenu=$("#mainMenu li");
+    mainMenu.mouseover(function () {
+        var index2=mainMenu.index(this);
+        changeMenu(index2);
+    })
+    mainMenu.mouseout(function () {
+        subMenu.css("display","none");
+    })
+    function changeMenu(index2) {
+        switch(index2){
+            case 0:
+                subMenu.css("display","block");
+                subMenu.children().children().eq(0).html("学校简介");
+                subMenu.children().children().eq(1).html("现任领导");
+                subMenu.children().children().eq(2).html("机构设置");
+                subMenu.children().children().eq(3).html("校园风光");
+                break;
+            case 1:
+                subMenu.css("display","block");
+                subMenu.children().children().eq(0).html("图片");
+                subMenu.children().children().eq(1).html("头条新闻");
+                subMenu.children().children().eq(2).html("莞工要闻");
+                subMenu.children().children().eq(3).html("校园动态");
+                subMenu.children().children().eq(3).html("图片新闻");
+                subMenu.children().children().eq(3).html("莞工印象");
+                break;
+            case 4:
+                subMenu.css("display","block");
+                subMenu.children().children().eq(0).html("本科招生");
+                subMenu.children().children().eq(1).html("就业信息");
+                subMenu.children().children().eq(2).html("继续教育");
+                break;
+            case 6:
+                subMenu.css("display","block");
+                subMenu.children().children().eq(0).html("校友会");
+                subMenu.children().children().eq(1).html("基金会");
+                break;
+        }
+    }
 })
