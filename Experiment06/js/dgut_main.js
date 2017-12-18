@@ -1,3 +1,4 @@
+//图片轮播
 $(function(){
     var points=$(".point li");
     var pics=$(".outer");
@@ -40,9 +41,12 @@ $(function(){
         changeMenu(index2);
     })
     mainMenu.mouseout(function () {
+        mainMenu.css("background-color","#E4E4E4");
         subMenu.css("display","none");
     })
     function changeMenu(index2) {
+        mainMenu.eq(index2).css("background-color","#003674");  //主菜单修改背景颜色
+
         switch(index2){
             case 0:
                 subMenu.css("display","block");
