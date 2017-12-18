@@ -1,0 +1,53 @@
+.layout{
+    margin: auto;
+    width: 900px;
+}
+/*header*/
+#header{
+    height: 120px;
+    line-height: 100px;
+}
+.icon{
+    width: 250px;
+    height: 103px;
+    float: left;
+    background-image: url("../images/icon.png");
+}
+.search{
+    margin-left: 120px;
+    float: left;
+}
+.select{
+    float: right;
+}
+.select a:link {
+    color:#FF0000;
+    text-decoration:none;
+}
+.select a:visited {
+    color:#00FF00;
+    text-decoration:none;
+}
+.select a:hover {
+    color:#000000;
+    text-decoration:underline;
+}
+.select a:active {
+    color:#FFFFFF;
+    text-decoration:none;
+}
+
+
+
+/*footer*/
+#footer{
+    height:100px;
+}
+#footer p{
+    font-size:12px;
+    margin:auto;
+    text-align: center;
+    font-family: "微软雅黑";
+    opacity:0.8;
+}
+
