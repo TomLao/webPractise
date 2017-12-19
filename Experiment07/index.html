@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>News WebPage</title>
+    <title>新闻网</title>
     <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/base.js"></script>
-    <script src="../jquery-3.2.1.js"></script>
 </head>
 <body>
+<h2>chrome及其派生浏览器如360可能遇到不支持file:///协议，请使用Firefox或IE</h2>
 <div class="layout">
     <!--header begin-->
     <div id="header">
-        <div class="icon"></div>
+        <a href="javascript:void(0);" onclick="load_main_page()"><div class="icon"></div></a>
         <div class="search">
             <input type="text"/>
             <input type="button" value="搜索"/>
         </div>
         <div class="select">
             <a href="javascript:void(0);" onclick="load_main_page()">首页</a>
-            <a href="">登陆</a>
-            <a href="">注册</a>
+            <a href="javascript:void(0);" onclick="load_login()">登陆</a>
+            <a href="javascript:void(0);" onclick="load_register()">注册</a>
         </div>
     </div>
     <!--header end-->
@@ -38,10 +39,12 @@
 
     <!--footer begin-->
     <div id="footer">
+        <br/><br/>
         <hr/>
         <p>Copyright © 2017 TomLao 版权所有</p>
         <p>备案号</p>
         <p>123456789</p>
+        <br/>
     </div>
     <!--footer begin-->
 </div>

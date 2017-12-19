@@ -1,3 +1,4 @@
+/*base.html的*/
 .layout{
     margin: auto;
     width: 900px;
@@ -37,8 +38,6 @@
     text-decoration:none;
 }
 
-
-
 /*footer*/
 #footer{
     height:100px;
@@ -51,3 +50,121 @@
     opacity:0.8;
 }
 
+
+/*main.html的*/
+/*4个新闻框块*/
+.pagemain{
+    width: 900px;
+    margin:auto;
+}
+.box_out{
+    border: 1px solid #ccc;
+    margin: 8px;
+    width: 432px;
+    height: 220px;
+    float: left;
+}
+/*.no_left{*/
+    /*margin-left: 0px;*/
+/*}*/
+/*.no_right{*/
+    /*margin-right: 0px;*/
+/*}*/
+.tit_box{
+    background: #ececec;
+    border:1px solid #fff;
+    border-bottom: 1px solid #ccc;
+    width: 432px;
+    height: 42px;
+    margin: auto;
+}
+.tit_box span{
+    display: block;
+    margin-left: 14px;
+    margin-top: 10px;
+    float: left;
+    height: 26px;
+    width: 103px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #003472;
+    background: #fff;
+    border: solid #ccc 1px;
+    border-bottom: none;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 6px;
+}
+.tit_box .more{
+    border: none;
+    float: right;
+    padding-right: -10px;
+    background: #ececec;
+    font-size: 12px;
+}
+.more a:hover{
+    color: red;
+}
+.box_out .list_div{
+    padding: 8px;
+    line-height: 26px;
+    overflow: hidden;
+}
+.list_div ul{
+    width: 432px;
+    height: 153px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.list_div li{
+    /*float: left;*/
+    /*height: 28px;*/
+    background: url(../images/arrow_06.gif) 8px no-repeat;
+    padding-left:24px;
+    line-height: 26px;
+    white-space: nowrap;
+    font-size: 12px;
+    /*background: red;*/
+}
+/*6个新闻框块结束*/
+
+/*detail.html的*/
+#detail{
+
+}
+#detail h2,#detail .information{
+    text-align: center;
+    line-height: 10px;
+}
+#detail pre{
+    font-size: 18px;
+}
+
+/*register.html的*/
+.frame{
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgb(187,221,255);
+    border: 2px solid rgb(0,0,102);
+}
+.frame h2{
+    height: 40px;
+    text-align: center;
+    background-color: rgb(187,221,255);
+    border-bottom: 2px solid rgb(0,0,102);
+}
+.content input{
+    margin-bottom: 20px;
+}
+.content span{
+    width: 60%;
+    overflow: hidden;
+    font-size: 12px;
+    color: red;
+}
+#bottom{
+    position: relative;
+    top: -30px;
+    left: 60px;
+}
